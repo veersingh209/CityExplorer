@@ -12,6 +12,7 @@ struct CityExplorerApp: App {
     var body: some Scene {
         WindowGroup {
             LandingView()
+                .environmentObject(ContentModel())
         }
     }
 }
