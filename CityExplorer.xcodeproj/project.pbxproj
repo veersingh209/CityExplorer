@@ -19,6 +19,7 @@
 		48D9B04928C1573900BFC3D5 /* BusinessSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9B04828C1573900BFC3D5 /* BusinessSectionHeader.swift */; };
 		48D9B04B28C158AC00BFC3D5 /* BusinessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9B04A28C158AC00BFC3D5 /* BusinessList.swift */; };
 		48D9B04E28C15A4700BFC3D5 /* BusinessSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9B04D28C15A4700BFC3D5 /* BusinessSection.swift */; };
+		48D9B05028C16F8E00BFC3D5 /* BusinessRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9B04F28C16F8E00BFC3D5 /* BusinessRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		48D9B04828C1573900BFC3D5 /* BusinessSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSectionHeader.swift; sourceTree = "<group>"; };
 		48D9B04A28C158AC00BFC3D5 /* BusinessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessList.swift; sourceTree = "<group>"; };
 		48D9B04D28C15A4700BFC3D5 /* BusinessSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSection.swift; sourceTree = "<group>"; };
+		48D9B04F28C16F8E00BFC3D5 /* BusinessRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				48D9B04A28C158AC00BFC3D5 /* BusinessList.swift */,
 				48D9B04828C1573900BFC3D5 /* BusinessSectionHeader.swift */,
 				48D9B04D28C15A4700BFC3D5 /* BusinessSection.swift */,
+				48D9B04F28C16F8E00BFC3D5 /* BusinessRow.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48D9B02728C11A6300BFC3D5 /* LandingView.swift in Sources */,
+				48D9B05028C16F8E00BFC3D5 /* BusinessRow.swift in Sources */,
 				48D9B04B28C158AC00BFC3D5 /* BusinessList.swift in Sources */,
 				48D9B04728C1551000BFC3D5 /* HomeView.swift in Sources */,
 				48D9B04928C1573900BFC3D5 /* BusinessSectionHeader.swift in Sources */,

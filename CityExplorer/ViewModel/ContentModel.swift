@@ -91,12 +91,23 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
                         let decoder = JSONDecoder()
                         let results = try decoder.decode(YelpBusinesses.self, from: data!)
                         
+                        
+                        // Sort by distance
+                        var businesses = results.businesses
+                        businesses.sort { (b1, b2) -> Bool in
+                            return b1.distance ?? 0 < b2.distance ?? 0
+                        }
+                        
+                        for b in businesses {
+                            b.getImageData()
+                        }
+                        
                         DispatchQueue.main.async {
                             switch category {
                             case Constants.Categories.arts:
-                                self.arts = results.businesses
+                                self.arts = businesses
                             case Constants.Categories.buinsess:
-                                self.restaurants = results.businesses
+                                self.restaurants = businesses
                             default:
                                 break
                             }
