@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LandingView.swift
 //  CityExplorer
 //
 //  Created by Veer Singh on 9/1/22.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LandingView: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LandingView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LandingView()
     }
 }
