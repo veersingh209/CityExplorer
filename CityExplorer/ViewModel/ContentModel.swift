@@ -10,8 +10,10 @@ import CoreLocation
 
 class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     
-    @Published var business = [Businesses]()
+    @Published var restaurants = [Businesses]()
     @Published var arts = [Businesses]()
+    
+    @Published var permissionStatus = CLAuthorizationStatus.notDetermined
     
     var location = CLLocationManager()
     
@@ -29,20 +31,14 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     // Detect if permision access changed
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         
+        permissionStatus = location.authorizationStatus
+        
         // User granted location permision
-        if location.authorizationStatus == .authorizedAlways ||
-            location.authorizationStatus == .authorizedWhenInUse {
+        if permissionStatus == .authorizedAlways ||
+            permissionStatus == .authorizedWhenInUse {
             
             // Start retreiving current location
             location.startUpdatingLocation()
-            
-            
-        } else if location.authorizationStatus == .denied {
-            // User denied location access
-            
-            
-        } else if location.authorizationStatus == .restricted {
-            // User denied app location access from settings
             
         }
     }
@@ -100,7 +96,7 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
                             case Constants.Categories.arts:
                                 self.arts = results.businesses
                             case Constants.Categories.buinsess:
-                                self.business = results.businesses
+                                self.restaurants = results.businesses
                             default:
                                 break
                             }

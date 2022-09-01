@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Businesses: Decodable {
+struct Businesses: Decodable, Identifiable {
     
     var id: String?
     var alias: String?

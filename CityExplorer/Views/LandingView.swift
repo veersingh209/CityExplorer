@@ -8,9 +8,26 @@
 import SwiftUI
 
 struct LandingView: View {
+    
+    @EnvironmentObject var model: ContentModel
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        // Location permission give
+        // Dispaly results
+        if model.permissionStatus == .authorizedAlways ||
+            model.permissionStatus == .authorizedWhenInUse {
+            
+            HomeView()
+            
+        } else if model.permissionStatus == .denied{
+            // Permission rejected
+            
+        } else {
+            // Location access restrcited from settings
+            
+        }
+        
     }
 }
 
