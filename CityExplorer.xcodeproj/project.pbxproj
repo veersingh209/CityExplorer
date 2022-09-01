@@ -13,7 +13,8 @@
 		48D9B02C28C11A6400BFC3D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D9B02B28C11A6400BFC3D5 /* Preview Assets.xcassets */; };
 		48D9B03628C1214000BFC3D5 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9B03528C1214000BFC3D5 /* ContentModel.swift */; };
 		48D9B03928C12FE200BFC3D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9B03828C12FE200BFC3D5 /* Constants.swift */; };
-		48D9B03C28C1314500BFC3D5 /* YelpNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9B03B28C1314500BFC3D5 /* YelpNetworkCall.swift */; };
+		48D9B03E28C1378700BFC3D5 /* YelpBusinesses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9B03D28C1378700BFC3D5 /* YelpBusinesses.swift */; };
+		48D9B04028C1381900BFC3D5 /* Businesses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9B03F28C1381900BFC3D5 /* Businesses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		48D9B03528C1214000BFC3D5 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		48D9B03728C123B000BFC3D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		48D9B03828C12FE200BFC3D5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		48D9B03B28C1314500BFC3D5 /* YelpNetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpNetworkCall.swift; sourceTree = "<group>"; };
+		48D9B03D28C1378700BFC3D5 /* YelpBusinesses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpBusinesses.swift; sourceTree = "<group>"; };
+		48D9B03F28C1381900BFC3D5 /* Businesses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Businesses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,8 @@
 		48D9B03428C11A8800BFC3D5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				48D9B03D28C1378700BFC3D5 /* YelpBusinesses.swift */,
+				48D9B03F28C1381900BFC3D5 /* Businesses.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -105,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				48D9B03828C12FE200BFC3D5 /* Constants.swift */,
-				48D9B03B28C1314500BFC3D5 /* YelpNetworkCall.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -181,7 +184,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				48D9B02728C11A6300BFC3D5 /* LandingView.swift in Sources */,
-				48D9B03C28C1314500BFC3D5 /* YelpNetworkCall.swift in Sources */,
+				48D9B03E28C1378700BFC3D5 /* YelpBusinesses.swift in Sources */,
+				48D9B04028C1381900BFC3D5 /* Businesses.swift in Sources */,
 				48D9B02528C11A6300BFC3D5 /* CityExplorerApp.swift in Sources */,
 				48D9B03628C1214000BFC3D5 /* ContentModel.swift in Sources */,
 				48D9B03928C12FE200BFC3D5 /* Constants.swift in Sources */,
