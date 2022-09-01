@@ -22,7 +22,7 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
         
     }
     
-    // MARK: Location Manager Methods
+    // MARK: - Location Manager Methods
     // Detect if permision access changed
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         
@@ -48,10 +48,18 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     // Get location
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        print(locations.first!)
+        let userLocation = locations.first
         
-        // Stop location request
-        location.stopUpdatingLocation()
+        // When location is recivied
+        if userLocation != nil {
+            // Stop all location requests
+            location.stopUpdatingLocation()
+            
+            // Yelp REST API call
+            YelpNetworkCall.getYelpData(category: "restaurants", location: userLocation!)
+            
+        }
+        
     }
     
 }
