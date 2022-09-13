@@ -23,7 +23,7 @@ class Businesses: Decodable, Identifiable, ObservableObject {
     var coordinates: Center?
     var transactions: [String]?
     var price: String?
-    var location: Location
+    var location: Location?
     var phone: String?
     var displayPhone: String?
     var distance: Double?

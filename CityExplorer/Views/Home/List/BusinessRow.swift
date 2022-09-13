@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BusinessRow: View {
     
-    var business: Businesses
+    @ObservedObject var business: Businesses
     
     var body: some View {
         

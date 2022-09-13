@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48BDE69928D100FD00EC79BE /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BDE69828D100FD00EC79BE /* BusinessDetail.swift */; };
 		48D9B02528C11A6300BFC3D5 /* CityExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9B02428C11A6300BFC3D5 /* CityExplorerApp.swift */; };
 		48D9B02728C11A6300BFC3D5 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9B02628C11A6300BFC3D5 /* LandingView.swift */; };
 		48D9B02928C11A6400BFC3D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D9B02828C11A6400BFC3D5 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48BDE69828D100FD00EC79BE /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
 		48D9B02128C11A6300BFC3D5 /* CityExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D9B02428C11A6300BFC3D5 /* CityExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityExplorerApp.swift; sourceTree = "<group>"; };
 		48D9B02628C11A6300BFC3D5 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48BDE69728D100E400EC79BE /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				48BDE69828D100FD00EC79BE /* BusinessDetail.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		48D9B01828C11A6300BFC3D5 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +166,7 @@
 				48D9B04828C1573900BFC3D5 /* BusinessSectionHeader.swift */,
 				48D9B04D28C15A4700BFC3D5 /* BusinessSection.swift */,
 				48D9B04F28C16F8E00BFC3D5 /* BusinessRow.swift */,
+				48BDE69728D100E400EC79BE /* Detail */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -236,6 +247,7 @@
 				48D9B04728C1551000BFC3D5 /* HomeView.swift in Sources */,
 				48D9B04928C1573900BFC3D5 /* BusinessSectionHeader.swift in Sources */,
 				48D9B03E28C1378700BFC3D5 /* YelpBusinesses.swift in Sources */,
+				48BDE69928D100FD00EC79BE /* BusinessDetail.swift in Sources */,
 				48D9B04028C1381900BFC3D5 /* Businesses.swift in Sources */,
 				48D9B02528C11A6300BFC3D5 /* CityExplorerApp.swift in Sources */,
 				48D9B04E28C15A4700BFC3D5 /* BusinessSection.swift in Sources */,

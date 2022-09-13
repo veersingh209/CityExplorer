@@ -26,9 +26,3 @@ struct BusinessList: View {
         
     }
 }
-
-struct BusinessList_Previews: PreviewProvider {
-    static var previews: some View {
-        BusinessList()
-    }
-}
