@@ -19,4 +19,5 @@ struct Constants {
         
     }
     
+    static let annotationID = "businessAnnotationResuseID"
 }
