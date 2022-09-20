@@ -1,6 +1,6 @@
 # CityExplorer
 
-Swift learning app built using the SwiftUI framework
+Swift app to show highest rated destionions near users current location. Data gathered from yelp
 
 ![](CityExplorer/Demo/CityExplorerDemoGIF.gif)
 
