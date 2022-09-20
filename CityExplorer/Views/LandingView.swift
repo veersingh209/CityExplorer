@@ -13,19 +13,21 @@ struct LandingView: View {
     
     var body: some View {
         
-        // Location permission give
+        if model.permissionStatus == .notDetermined {
+            // If undetermined, show onboarding
+            Welcome()
+        }
+        
+        // Location permission given
         // Dispaly results
-        if model.permissionStatus == .authorizedAlways ||
+        else if model.permissionStatus == .authorizedAlways ||
             model.permissionStatus == .authorizedWhenInUse {
             
             HomeView()
             
-        } else if model.permissionStatus == .denied{
-            // Permission rejected
-            
         } else {
-            // Location access restrcited from settings
-            
+            // Location denied
+            LocationDenied()
         }
         
     }

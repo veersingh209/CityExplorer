@@ -22,9 +22,11 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
         
         location.delegate = self
         
+    }
+    
+    func getLocation() {
         // Ask for location permission
         location.requestWhenInUseAuthorization()
-        
     }
     
     // MARK: - Location Manager Methods

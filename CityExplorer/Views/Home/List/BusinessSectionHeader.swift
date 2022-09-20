@@ -18,7 +18,8 @@ struct BusinessSectionHeader: View {
                 .foregroundColor(.white)
             
             Text(sectionText)
-                .font(.headline)
+                .font(.title3)
+                .fontWeight(.bold)
             
         }
         
