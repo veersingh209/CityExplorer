@@ -1,6 +1,7 @@
 # CityExplorer
 
 Swift learning app built using the SwiftUI framework
+
 ![](CityExplorer/Demo/CityExplorerDemoGIF.gif)
 
 ### Utilizes the following features:
