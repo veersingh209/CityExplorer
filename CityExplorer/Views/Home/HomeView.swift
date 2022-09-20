@@ -23,7 +23,7 @@ struct HomeView: View {
                     VStack(alignment: .leading) {
                         HStack {
                             Image(systemName: "location")
-                            Text("San Francsico, CA")
+                            Text(model.placemark?.locality ?? "")
                                 .bold()
                             
                             Spacer()
@@ -63,7 +63,7 @@ struct HomeView: View {
                             
                             HStack {
                                 Image(systemName: "location")
-                                Text("San Francsico, CA")
+                                Text(model.placemark?.locality ?? "")
                                     .bold()
                                 
                                 Spacer()

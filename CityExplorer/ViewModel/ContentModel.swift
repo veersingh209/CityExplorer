@@ -15,6 +15,8 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     @Published var permissionStatus = CLAuthorizationStatus.notDetermined
     
+    @Published var placemark: CLPlacemark?
+    
     var location = CLLocationManager()
     
     override init() {
@@ -55,6 +57,17 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
         if userLocation != nil {
             // Stop all location requests
             location.stopUpdatingLocation()
+            
+            // User placemark
+            let coder = CLGeocoder()
+            
+            coder.reverseGeocodeLocation(userLocation!) { (placemarks, error) in
+                if error == nil {
+                    
+                    self.placemark = placemarks?.first
+                    
+                }
+            }
             
             // Yelp REST API call
             getYelpData(category: Constants.Categories.buinsess, location: userLocation!)
