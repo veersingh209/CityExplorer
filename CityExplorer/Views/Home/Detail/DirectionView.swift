@@ -24,7 +24,26 @@ struct DirectionView: View {
                 if let lat = business.coordinates?.latitude, let long = business.coordinates?.longitude,
                    let name = business.name {
                     
-                    Link("Open in Maps", destination: URL(string:"http://maps.apple.com/?ll=\(lat),\(long)&q=\(name.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)")!)
+                    
+                    Button {
+                        //
+                    } label: {
+                        
+                        ZStack {
+                            
+                            Rectangle()
+                                .frame(height: 48)
+                                .foregroundColor(.blue)
+                                .cornerRadius(10)
+                            
+                            Link("Open in Maps", destination: URL(string:"http://maps.apple.com/?ll=\(lat),\(long)&q=\(name.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)")!)
+                                .foregroundColor(.white)
+
+                        }
+                        .padding()
+                        
+                    }
+                    
                 }
             }
             .padding()

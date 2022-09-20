@@ -35,6 +35,7 @@ struct HomeView: View {
                                     .font(.caption)
                             }
                         }
+                        .foregroundColor(Color("AdaptiveText"))
                         
                         Divider()
                         
@@ -75,25 +76,21 @@ struct HomeView: View {
                                         .font(.caption)
                                 }
                             }
+                            .foregroundColor(.black)
                             .padding()
                         }
                         .padding()
                         
                     }
                     .navigationBarHidden(true)
-
+                    .buttonStyle(.plain)
                 }
             }
+            .background(Color("AdaptiveBackground"))
             
         } else {
             ProgressView()
         }
         
-    }
-}
-
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
     }
 }

@@ -23,7 +23,7 @@ struct BusinessList: View {
                     .padding(.bottom)
                 
             }
-            
+
         }
         
     }

@@ -15,7 +15,7 @@ struct BusinessSectionHeader: View {
         ZStack (alignment: .leading) {
             
             Rectangle()
-                .foregroundColor(.white)
+                .foregroundColor(Color("AdaptiveBackground"))
             
             Text(sectionText)
                 .font(.title3)

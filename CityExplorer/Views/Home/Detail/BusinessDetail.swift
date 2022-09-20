@@ -55,7 +55,7 @@ struct BusinessDetail: View {
                         .bold()
                     Text(business.displayPhone!)
                     Spacer()
-                    Link("Call", destination: URL(string: "tel\(business.phone ?? "")")!)
+                    Link("Call", destination: URL(string: "tel:\(business.phone ?? "")")!)
                 }
                 .padding()
                 
